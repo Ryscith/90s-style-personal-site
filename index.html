@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en-US">
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="mobile-web-app-capable" content="yes" />
@@ -7,6 +7,12 @@
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="authorization_endpoint" href="https://indieauth.com/auth" />
     <link rel="token_endpoint" href="https://tokens.indieauth.com/token" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&family=Lekton:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
     <!-- To use social readers via microsub, follow these steps.
     (Details: https://indieweb.org/Microsub#Getting_Started)
     1. After publishing this to your domain, sign in to https://aperture.p3k.io/login with your domain
@@ -20,20 +26,24 @@
 
   <body>
     <!-- Reference for representative h-card properties: https://microformats.org/wiki/h-card -->
-    <main class="h-card" rel="author">
+    <main>
+      <header>
+        <h1>WELCOME TO ME</h1>
+      </header>
       <h1>I'm <span class="p-name">Reilly</span>.</h1>
 
-      <p class="p-note">...and I am a human on the Internet.</p>
+      <p class="p-note">A software engineer.</p>
 
       <ul>
-        <li><a class="u-uid u-url" href="__this_page__">me.ryscith.xyz</a></li>
+        <li>
+          <a href="index.html" rel="canonical">me.ryscith.xyz</a>
+        </li>
         <li>
           Github:
-          <a class="u-url" href="https://github.com/Ryscith" rel="me"
-            >@Ryscith</a
-          >
+          <a href="https://github.com/Ryscith" rel="me">@Ryscith</a>
         </li>
       </ul>
     </main>
+    <div id="bg"></div>
   </body>
 </html>
