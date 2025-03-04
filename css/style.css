@@ -4,17 +4,9 @@
   --border-color: #444;
 }
 
-#bg {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -10;
+html {
   background-image: url("../img/tiling_space_background.png");
-  background-size: 150px;
-  background-attachment: fixed;
-  pointer-events: none;
+  background-size: 200px;
 }
 
 body {
@@ -30,8 +22,6 @@ body {
   padding: var(--spacing);
   width: 1200px;
   max-width: calc(90vw - var(--spacing));
-  background-image: url("../img/metal_plates.jpg");
-  background-size: 50px;
   background-color: var(--bg);
 }
 
