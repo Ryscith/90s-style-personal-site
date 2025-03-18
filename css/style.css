@@ -1,12 +1,30 @@
+@import url("glitch_effect.css");
+
 :root {
   --spacing: clamp(20px, 4vw, 60px);
+  --padding: 10px;
   --bg: #000;
   --border-color: #444;
 }
 
 html {
   background-image: url("../img/tiling_space_background.png");
-  background-size: 200px;
+  background-size: 300px;
+}
+
+@media screen {
+  html {
+    animation: galaxy infinite 15s linear;
+  }
+}
+
+@keyframes galaxy {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 300px -300px;
+  }
 }
 
 body {
@@ -17,16 +35,49 @@ body {
     Roboto;
   color: blueviolet;
   text-align: center;
-  border: 7px groove var(--border-color);
-  margin: var(--spacing) auto;
-  padding: var(--spacing);
-  width: 1200px;
-  max-width: calc(90vw - var(--spacing));
-  background-color: var(--bg);
+  height: 100%;
+}
+
+.full-page-container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.enter-text {
+  background-image: url("../img/spaceship.gif");
+  border: 7px double var(--border-color);
+  margin: 50px;
+  padding: 60px;
 }
 
 main {
+  border: 7px groove var(--border-color);
+  margin: var(--spacing) auto;
+  padding: var(--spacing);
+  max-width: calc(90vw - var(--spacing));
+  background-color: var(--bg);
   line-height: 1.6;
+}
+
+.navbar {
+  border: 7px groove var(--border-color);
+  margin: var(--spacing) auto;
+  padding: var(--padding);
+  max-width: calc(80vw - var(--spacing));
+  background-color: var(--bg);
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.nav-item {
+  font-size: x-large;
+  color: blueviolet;
+  line-height: 1;
+  z-index: 2;
+  /* filter: drop-shadow(0 1px 3px); */
 }
 
 ul {
