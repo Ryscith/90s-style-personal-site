@@ -1,0 +1,4 @@
+baseURL = 'https://me.ryscith.xyz/'
+languageCode = 'en-us'
+title = 'me.ryscith.xyz'
+theme = '90s-galaxy-theme'
