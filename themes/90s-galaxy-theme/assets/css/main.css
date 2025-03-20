@@ -36,6 +36,12 @@ body {
   color: blueviolet;
   text-align: center;
   height: 100%;
+  max-width: 1300px;
+}
+
+.hero-img {
+  border: 7px ridge var(--border-color);
+  max-width: 200px;
 }
 
 .full-page-container {
@@ -43,6 +49,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.main-container {
+  display: grid;
+  grid-template-columns: auto min-content;
+  margin: var(--spacing) auto;
+  gap: 10px;
 }
 
 .enter-text {
@@ -53,8 +66,7 @@ body {
 }
 
 main {
-  border: 7px groove var(--border-color);
-  margin: var(--spacing) auto;
+  border: 7px ridge var(--border-color);
   padding: var(--spacing);
   max-width: calc(90vw - var(--spacing));
   background-color: var(--bg);
@@ -88,4 +100,25 @@ main {
 ul {
   padding: 0;
   list-style: none;
+}
+
+.list-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  place-content: center;
+}
+
+.poem {
+}
+
+.haiku {
+  margin: 0 0 0 20px;
+  min-width: 250px;
+  text-align: left;
+}
+
+.gifypet {
+  border: 7px ridge var(--border-color);
+  background-color: var(--bg);
 }

@@ -1,0 +1,14 @@
++++
+date = '{{ .Date }}'
+draft = true
+title = '{{ replace .File.ContentBaseName "-" " " | title }}'
+tags = ["haiku"]
++++
+
+<div class="poem haiku">
+  <p>
+    Line1<br />
+    Line2<br />
+    Line3
+  </p>
+</div>

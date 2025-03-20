@@ -3,6 +3,9 @@ languageCode = 'en-us'
 title = 'me.ryscith.xyz'
 theme = '90s-galaxy-theme'
 
+[taxonomies]
+  tag = 'tags'
+
 [caches]
   [caches.images]
     dir = ':cacheDir/images'
