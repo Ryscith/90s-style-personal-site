@@ -27,6 +27,11 @@ html {
   }
 }
 
+hr {
+  border: 1px solid var(--border-color);
+  width: 250px;
+}
+
 body {
   font-family:
     Lekton,
@@ -53,7 +58,7 @@ body {
 
 .main-container {
   display: grid;
-  grid-template-columns: auto min-content;
+  grid-template-rows: auto min-content;
   margin: var(--spacing) auto;
   gap: 10px;
 }
@@ -89,7 +94,7 @@ main {
   color: blueviolet;
   line-height: 1;
   z-index: 2;
-  /* filter: drop-shadow(0 1px 3px); */
+  margin: auto var(--spacing);
 }
 
 .nav-item > a {

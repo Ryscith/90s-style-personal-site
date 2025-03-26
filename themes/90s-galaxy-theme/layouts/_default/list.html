@@ -1,5 +1,10 @@
 {{ define "main" }}
 <h1>{{ .Title }}</h1>
 {{ .Content }}
-<div class="list-container">{{ range .Pages }} {{ .Content }} {{ end }}</div>
+<div class="list-container">
+  <hr />
+  {{ range .Pages }} {{ .Content }}
+  <hr />
+  {{ end }}
+</div>
 {{ end }}
